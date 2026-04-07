@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Dizine by Jack | Business & Marketing Consultancy</title>
+  <meta name="description" content="Dizine by Jack offers business consultation and public relations marketing & advertising. Let's make your brand shine.">
+  
+  <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/DezineFavicon.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/DezineFavicon.jpeg">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      background: #F4F7FC;
+      color: #2C3E44;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .page-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .main-header {
+      background: #1E2A38;
+      color: #F0F4F8;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border-bottom: 3px solid #4A7B9D;
+    }
+
+    .header-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      max-height: 75px;
+      width: auto;
+      display: block;
+    }
+
+    .tagline-header {
+      font-size: 0.95rem;
+      background: rgba(74, 123, 157, 0.2);
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      color: #D6E9F5;
+    }
+
+    .main-content {
+      max-width: 1280px;
+      margin: 2.5rem auto;
+      padding: 0 2rem;
+      flex: 1;
+    }
+
+    .hero-card {
+      background: white;
+      border-radius: 2rem;
+      padding: 2.5rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+      border: 1px solid #E2E8F0;
+      text-align: center;
+    }
+
+    .business-title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #1E2A38;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .business-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #2C3E44;
+      margin: 1.2rem 0 2rem 0;
+      background: #F8FAFE;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      border-left: 4px solid #4A7B9D;
+      text-align: left;
+    }
+
+    .method-section {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid #E2E8F0;
+    }
+
+    .method-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #1E2A38;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .method-text {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #2C3E44;
+      text-align: left;
+    }
+    .method-text p {
+      margin-bottom: 1.2rem;
+    }
+
+    .image-section {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .image-container {
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      background: #E2E8F0;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .service-card {
+      flex: 1;
+      min-width: 200px;
+      background: #F8FAFE;
+      border-radius: 1.5rem;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      border: 1px solid #E2E8F0;
+    }
+
+    .quote-block {
+      background: #F8FAFE;
+      border-radius: 1.5rem;
+      padding: 1.8rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      text-align: center;
+      color: #1E2A38;
+      border-left: 6px solid #4A7B9D;
+    }
+
+    .seo-strategy-section {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid #E2E8F0;
+    }
+
+    .seo-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #1E2A38;
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+
+    .seo-content h3.black-head { color: #1E2A38; text-align: center; margin: 1.5rem 0 0.8rem; font-size: 1.25rem; font-weight: 600; }
+    .seo-content h3.blue-head { color: #4A7B9D; text-align: center; margin: 1.5rem 0 0.8rem; font-size: 1.25rem; font-weight: 600; }
+    .seo-content p { margin-bottom: 1.2rem; line-height: 1.7; font-size: 1rem; color: #2C3E44; }
+
+    .elevate-text {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      color: #6B8A9E;
+    }
+
+    .strategy-highlight {
+      background: #EBF2F9;
+      border-radius: 1.5rem;
+      padding: 2rem 2.2rem;
+      border-left: 6px solid #4A7B9D;
+      margin-bottom: 2rem;
+    }
+    .strategy-highlight p { margin-bottom: 1rem; line-height: 1.65; color: #2C3E44; }
+    .strategy-highlight .centered-line { text-align: center; display: block; font-weight: bold; }
+
+    /* FOOTER FIX */
+    .main-footer {
+      background: #1E2A38;
+      color: #D6E9F5;
+      padding: 2.5rem 2rem;
+      border-top: 1px solid #4A7B9D;
+    }
+
+    .footer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .footer-logo-wrap {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .footer-logo {
+      max-height: 75px;
+      width: auto;
+    }
+
+    .footer-contact {
+      flex: 2; /* Takes up more central space */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-contact h4 {
+      font-size: 0.95rem;
+      color: #B8D4E8;
+      margin-bottom: 0.6rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-text { color: #F0F4F8; }
+    .contact-text a { color: #B8D4E8; text-decoration: none; border-bottom: 1px solid rgba(184, 212, 232, 0.3); }
+
+    .footer-buttons-wrap {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .footer-buttons {
+      display: flex;
+      flex-direction: column; /* STACKED SOCIALS */
+      gap: 0.6rem;
+      width: 160px; /* Fixed width helps balancing */
+    }
+
+    .btn-facebook, .btn-instagram {
+      padding: 0.5rem 1rem;
+      border-radius: 60px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      color: white;
+      text-align: center;
+      font-weight: 500;
+      display: block;
+    }
+    .btn-facebook { background: #1877F2; }
+    .btn-instagram { background: linear-gradient(135deg, #feda77, #d62976, #962fbf, #4f5bd5); }
+
+    .footer-copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #3A5668;
+      font-size: 0.75rem;
+      color: #8FADC2;
+      width: 100%;
+    }
+
+    /* TITAN SECTION */
+    .titan-section { background: white; padding: 20px; text-align: center; border-top: 1px solid #eee; }
+    .tbp-footer { display: flex; justify-content: center; width: 100%; }
+    .tbp-footer a { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #1E2A38; font-size: 13px; font-weight: 500; }
+    .tbp-logo img { height: 28px; }
+
+    @media (max-width: 850px) {
+      .footer-container { flex-direction: column; text-align: center; }
+      .footer-logo-wrap, .footer-buttons-wrap { justify-content: center; }
+      .footer-buttons { width: 100%; max-width: 250px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+  <header class="main-header">
+    <div class="header-container">
+      <img class="header-logo" src="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/ColorfulDivinelogo.png" alt="Dizine by Jack">
+      <div class="tagline-header">“I’ll have you looking good already!”</div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero-card">
+      <h1 class="business-title">Dizine by Jack</h1>
+      <div class="business-description">
+        <p>Dizine by Jack is a modern business consultation and public relations agency that specializes in marketing, advertising, and personal brand elevation. We work with entrepreneurs, small businesses, and creatives who are ready to move beyond generic strategies and build something truly magnetic.</p>
+        <p>Our approach blends sharp strategic thinking with creative storytelling — because great marketing isn't just seen, it's felt and remembered. Whether you need a full-scale brand refresh, targeted ad campaigns, or a complete PR roadmap, we tailor every move to your unique voice and goals.</p>
+        <p>At Dizine by Jack, we don't believe in cookie-cutter formulas. We dig deep, ask the right questions, and craft the kind of presence that turns heads and builds lasting trust. Let's make your business impossible to ignore.</p>
+      </div>
+      <div class="service-grid">
+        <div class="service-card"><h3>Business Consultation</h3><p>Strategic planning, brand positioning, operational insight for growth.</p></div>
+        <div class="service-card"><h3>PR & Advertising</h3><p>Personal relations, media outreach, and ad campaigns that resonate.</p></div>
+        <div class="service-card"><h3>Marketing Strategy</h3><p>Data-driven creative direction to make your business shine.</p></div>
+      </div>
+    </div>
+
+    <div class="method-section">
+      <div class="method-title">The Core Method</div>
+      <div class="method-text">
+        <p>Public relations, marketing, and advertising aren't just about flashy campaigns or big budgets. At the heart of every successful brand lies a solid, authentic core method — a strategic foundation that aligns message, audience, and value. When that method is clear and purpose-driven, everything else naturally falls into place: engagement, loyalty, and long-term growth.</p>
+        <p>But here's the truth: developing that method is unique to every business. There's no one-size-fits-all formula. It takes real skill, hands-on experience, and a deep understanding of human psychology, market dynamics, and creative storytelling. That's where Dizine by Jack comes in. We don't just run ads — we craft the engine that drives your brand forward, tailored specifically to your vision and goals.</p>
+      </div>
+    </div>
+
+    <div class="image-section">
+      <div class="image-container"><img src="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/Dizineimage.jpg" alt="Dizine by Jack Brand Image"></div>
+    </div>
+
+    <div class="quote-block">“The right method creates momentum. Momentum builds trust. Trust turns into results. Let's build your method, together.”</div>
+
+    <div class="seo-strategy-section">
+      <div class="seo-title">Why Strategy Comes First in PR & Marketing</div>
+      <div class="seo-content">
+        <p>In the world of public relations, marketing, and advertising, one truth remains constant: <strong>a great strategy makes everything else easier</strong>. When you begin with a well-defined, research-backed plan, every decision that follows becomes simpler, faster, and more effective. You no longer guess. You no longer chase trends blindly. Instead, you ask one powerful question: <em>“Does this fit our brand?”</em></p>
+
+        <h3 class="black-head">The Strategy-First Advantage</h3>
+        <p>Most businesses jump straight to tactics. They want a viral social media post, a press release, or a flashy ad campaign before they've defined who they are, who they're speaking to, and what they stand for. That approach is not only inefficient — it's risky. Without a strategic foundation, you risk sending mixed messages, wasting ad spend, and confusing your audience.</p>
+        <p>When you start with strategy, everything changes. You clarify your brand voice, your target audience, your unique value proposition, and your long-term goals. Then, when a new opportunity arises — a partnership, a content idea, a PR angle — you don't have to wonder if it's right. You simply measure it against your strategy. If it fits, you move forward confidently. If it doesn't, you pass without hesitation.</p>
+
+        <h3 class="blue-head">How Brand Alignment Simplifies Decision-Making</h3>
+        <p>Imagine having a clear filter for every marketing decision. That's what brand alignment gives you. Every piece of content, every ad creative, every media pitch either supports your brand or dilutes it. There is no neutral ground. A strong strategic framework turns ambiguity into clarity. It transforms marketing from a guessing game into a deliberate, measurable process.</p>
+        <p>For example, a luxury brand wouldn't run bargain-bin ads. A youth-focused streetwear brand wouldn't use corporate jargon. A nonprofit focused on environmental causes wouldn't partner with a fossil fuel company. These are obvious extremes, but the principle applies at every level. Strategy defines the boundaries within which creativity can thrive.</p>
+
+        <h3 class="black-head">Public Relations Built on Strategy</h3>
+        <p>In public relations, strategy is everything. A well-placed story in the right publication can elevate your brand for years. But without a strategic angle, even the best media list won't save you. Journalists don't want generic pitches. They want stories that fit their audience and your brand's authentic narrative. That requires a deep understanding of your positioning, your key messages, and your ideal reputation.</p>
+        <p>At Dizine by Jack, we build PR strategies from the ground up. We don't just send press releases. We craft narratives, identify the right outlets, and time our outreach for maximum impact. And because it's all grounded in strategy, every pitch reinforces your brand instead of scattering your efforts.</p>
+
+        <h3 class="blue-head">Marketing That Works Without Waste</h3>
+        <p>Digital marketing, social media advertising, email campaigns, content marketing — the options are endless. But without a strategy, you're throwing darts in the dark. A strategic approach means knowing exactly who you're targeting, what message will resonate, and which channels will reach them most effectively. That knowledge doesn't just improve results. It saves money, time, and energy.</p>
+        <p>When you have a strong marketing strategy, you stop reacting to every new trend and start executing a deliberate plan. You measure what matters. You double down on what works. And you always, always ask: <strong>“Does this fit our brand?”</strong> If the answer is yes, you proceed with confidence. If it's no, you save your resources for something better.</p>
+
+        <h3 class="black-head">The Ripple Effect of Good Strategy</h3>
+        <p>A solid strategy doesn't just help you say "yes" or "no" more easily. It creates alignment across your entire organization. Your team moves in the same direction. Your messaging stays consistent across every touchpoint. Your customers experience a cohesive brand identity that builds trust and recognition over time.</p>
+        <p>Good strategy also makes adaptation easier. When market conditions shift — and they always do — a strategic foundation helps you pivot without losing your core identity. You adjust tactics, not values. You change channels, not your message. That resilience is what separates brands that fade away from brands that endure.</p>
+
+        <h3 class="blue-head">Opportunity Cost and Strategic Focus</h3>
+        <p>Every hour and every dollar you spend on marketing has an opportunity cost. Time spent on off-brand content is time not spent on brand-building. Money spent on the wrong ad platform is money not invested in the right one. Strategy minimizes that waste. It gives you a lens to evaluate every opportunity, big or small.</p>
+        <p>When you have the opportunity to start with a good strategy — whether you're launching a new brand, refreshing an existing one, or running a specific campaign — take it. That upfront investment pays dividends in speed, clarity, and effectiveness for years to come. Once the strategy is solid, execution becomes almost mechanical. You just decide if each new idea fits the brand. If it does, you run with it. If it doesn't, you set it aside without regret.</p>
+
+        <h3 class="black-head">Why Most Brands Skip This Step</h3>
+        <p>If strategy is so valuable, why do so many businesses skip it? Because it requires patience, discipline, and expertise. It's easier to jump straight to tactics. It feels productive to design an ad or write a social post. But that false productivity often leads to scattered results and frustrated teams.</p>
+        <p>A good strategist — like the team at Dizine by Jack — does the hard work first. We research your market, analyze your competitors, define your audience, and articulate your unique position. We ask uncomfortable questions. We challenge assumptions. And only when the strategy is rock-solid do we move to creative execution.</p>
+        <p>The result? Marketing and PR that feel effortless not because they are, but because the heavy lifting happened before a single ad ran or a single pitch was sent.</p>
+      </div>
+    </div>
+
+    <div class="elevate-text">Let's elevate your brand presence — creative, bold, and effective.</div>
+
+    <div class="strategy-highlight">
+      <p class="centered-line">Start With Strategy. Everything Else Follows.</p>
+      <p>If you're ready to stop guessing and start growing, begin with strategy. Whether you need a full brand positioning, a PR roadmap, or a marketing plan that actually delivers, Dizine by Jack is here to help. We'll build the foundation that makes every future decision easier, faster, and more effective.</p>
+      <p><strong>Remember:</strong> when you have a good strategy, you don't chase every opportunity. You choose only the ones that fit. And that clarity is the ultimate competitive advantage.</p>
+      <p class="centered-line">Let's build your strategy first. Then watch everything else fall into place.</p>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-logo-wrap">
+        <img class="footer-logo" src="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/ColorfulDivinelogo.png" alt="Dizine by Jack">
+      </div>
+        
+      <div class="footer-contact">
+        <h4>CONTACT</h4>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-text">📞 +1 580-644-4885</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-text">✉️ <a href="mailto:dizinebyjack@gmail.com">dizinebyjack@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-buttons-wrap">
+        <div class="footer-buttons">
+          <a href="https://www.facebook.com/profile.php?id=100090058807047" target="_blank" rel="noopener noreferrer" class="btn-facebook">📘 Facebook</a>
+          <a href="https://instagram.com/jackmilla98" target="_blank" rel="noopener noreferrer" class="btn-instagram">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">© 2025 Dizine by Jack — Business consultation & PR marketing.</div>
+  </footer>
+
+  <div class="titan-section">
+    <div class="tbp-footer">
+      <a href="https://www.facebook.com/TitanBusinessPros" target="_blank">
+        <div class="tbp-logo"><img src="https://github.com/71240/Sugarplum/raw/main/TransparentTitanLogo.png" alt="Titan Business Pros LLC"></div>
+        <p>Website Created By <strong>Titan Business Pros LLC</strong></p>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
