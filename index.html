@@ -32,7 +32,6 @@
       flex-direction: column;
     }
 
-    /* Header */
     .main-header {
       background: #1E2A38;
       color: #F0F4F8;
@@ -100,7 +99,7 @@
       padding: 1.5rem;
       border-radius: 1.5rem;
       border-left: 4px solid #4A7B9D;
-      text-align: left;
+      text-align: center;
     }
 
     .method-section {
@@ -124,7 +123,7 @@
       font-size: 1rem;
       line-height: 1.65;
       color: #2C3E44;
-      text-align: left;
+      text-align: center;
     }
     .method-text p {
       margin-bottom: 1.2rem;
@@ -163,6 +162,46 @@
       text-align: center;
       border: 1px solid #E2E8F0;
     }
+    
+    /* Icon styling for service cards */
+    .service-icon {
+      display: inline-block;
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      color: #4A7B9D;
+    }
+    
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #1E2A38;
+    }
+    
+    .service-card p {
+      font-size: 0.9rem;
+      color: #2C3E44;
+    }
+
+    /* About section title - matching Core Method */
+    .about-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #1E2A38;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* About description text - matching method-text */
+    .about-description {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #2C3E44;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .about-description p {
+      margin-bottom: 0;
+    }
 
     .quote-block {
       background: #F8FAFE;
@@ -193,9 +232,12 @@
       text-align: center;
     }
 
+    .seo-content {
+      text-align: center;
+    }
     .seo-content h3.black-head { color: #1E2A38; text-align: center; margin: 1.5rem 0 0.8rem; font-size: 1.25rem; font-weight: 600; }
     .seo-content h3.blue-head { color: #4A7B9D; text-align: center; margin: 1.5rem 0 0.8rem; font-size: 1.25rem; font-weight: 600; }
-    .seo-content p { margin-bottom: 1.2rem; line-height: 1.7; font-size: 1rem; color: #2C3E44; }
+    .seo-content p { margin-bottom: 1.2rem; line-height: 1.7; font-size: 1rem; color: #2C3E44; text-align: center; }
 
     .elevate-text {
       font-size: 1.4rem;
@@ -212,11 +254,11 @@
       padding: 2rem 2.2rem;
       border-left: 6px solid #4A7B9D;
       margin-bottom: 2rem;
+      text-align: center;
     }
     .strategy-highlight p { margin-bottom: 1rem; line-height: 1.65; color: #2C3E44; }
     .strategy-highlight .centered-line { text-align: center; display: block; font-weight: bold; }
 
-    /* FOOTER FIX */
     .main-footer {
       background: #1E2A38;
       color: #D6E9F5;
@@ -245,7 +287,7 @@
     }
 
     .footer-contact {
-      flex: 2; /* Takes up more central space */
+      flex: 2;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -286,9 +328,9 @@
 
     .footer-buttons {
       display: flex;
-      flex-direction: column; /* STACKED SOCIALS */
+      flex-direction: column;
       gap: 0.6rem;
-      width: 160px; /* Fixed width helps balancing */
+      width: 160px;
     }
 
     .btn-facebook, .btn-instagram {
@@ -314,7 +356,6 @@
       width: 100%;
     }
 
-    /* TITAN SECTION */
     .titan-section { background: white; padding: 20px; text-align: center; border-top: 1px solid #eee; }
     .tbp-footer { display: flex; justify-content: center; width: 100%; }
     .tbp-footer a { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #1E2A38; font-size: 13px; font-weight: 500; }
@@ -332,11 +373,12 @@
   <header class="main-header">
     <div class="header-container">
       <img class="header-logo" src="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/ColorfulDivinelogo.png" alt="Dizine by Jack">
-      <div class="tagline-header">“I’ll have you looking good already!”</div>
+      <div class="tagline-header">"I'll have you looking good already!"</div>
     </div>
   </header>
 
   <main class="main-content">
+    <!-- SECTION 1: Dizine by Jack (ORIGINAL MODEL) -->
     <div class="hero-card">
       <h1 class="business-title">Dizine by Jack</h1>
       <div class="business-description">
@@ -345,9 +387,21 @@
         <p>At Dizine by Jack, we don't believe in cookie-cutter formulas. We dig deep, ask the right questions, and craft the kind of presence that turns heads and builds lasting trust. Let's make your business impossible to ignore.</p>
       </div>
       <div class="service-grid">
-        <div class="service-card"><h3>Business Consultation</h3><p>Strategic planning, brand positioning, operational insight for growth.</p></div>
-        <div class="service-card"><h3>PR & Advertising</h3><p>Personal relations, media outreach, and ad campaigns that resonate.</p></div>
-        <div class="service-card"><h3>Marketing Strategy</h3><p>Data-driven creative direction to make your business shine.</p></div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Business Consultation</h3>
+          <p>Strategic planning, brand positioning, operational insight for growth.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📰</div>
+          <h3>PR & Advertising</h3>
+          <p>Personal relations, media outreach, and ad campaigns that resonate.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <h3>Marketing Strategy</h3>
+          <p>Data-driven creative direction to make your business shine.</p>
+        </div>
       </div>
     </div>
 
@@ -360,15 +414,17 @@
     </div>
 
     <div class="image-section">
-      <div class="image-container"><img src="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/Dizineimage.jpg" alt="Dizine by Jack Brand Image"></div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/71240/Dizine-by-Jack/main/NewDizineImage.jpeg" alt="Dizine by Jack Brand Image">
+      </div>
     </div>
 
-    <div class="quote-block">“The right method creates momentum. Momentum builds trust. Trust turns into results. Let's build your method, together.”</div>
+    <div class="quote-block">"The right method creates momentum. Momentum builds trust. Trust turns into results. Let's build your method, together."</div>
 
     <div class="seo-strategy-section">
       <div class="seo-title">Why Strategy Comes First in PR & Marketing</div>
       <div class="seo-content">
-        <p>In the world of public relations, marketing, and advertising, one truth remains constant: <strong>a great strategy makes everything else easier</strong>. When you begin with a well-defined, research-backed plan, every decision that follows becomes simpler, faster, and more effective. You no longer guess. You no longer chase trends blindly. Instead, you ask one powerful question: <em>“Does this fit our brand?”</em></p>
+        <p>In the world of public relations, marketing, and advertising, one truth remains constant: <strong>a great strategy makes everything else easier</strong>. When you begin with a well-defined, research-backed plan, every decision that follows becomes simpler, faster, and more effective. You no longer guess. You no longer chase trends blindly. Instead, you ask one powerful question: <em>"Does this fit our brand?"</em></p>
 
         <h3 class="black-head">The Strategy-First Advantage</h3>
         <p>Most businesses jump straight to tactics. They want a viral social media post, a press release, or a flashy ad campaign before they've defined who they are, who they're speaking to, and what they stand for. That approach is not only inefficient — it's risky. Without a strategic foundation, you risk sending mixed messages, wasting ad spend, and confusing your audience.</p>
@@ -384,7 +440,7 @@
 
         <h3 class="blue-head">Marketing That Works Without Waste</h3>
         <p>Digital marketing, social media advertising, email campaigns, content marketing — the options are endless. But without a strategy, you're throwing darts in the dark. A strategic approach means knowing exactly who you're targeting, what message will resonate, and which channels will reach them most effectively. That knowledge doesn't just improve results. It saves money, time, and energy.</p>
-        <p>When you have a strong marketing strategy, you stop reacting to every new trend and start executing a deliberate plan. You measure what matters. You double down on what works. And you always, always ask: <strong>“Does this fit our brand?”</strong> If the answer is yes, you proceed with confidence. If it's no, you save your resources for something better.</p>
+        <p>When you have a strong marketing strategy, you stop reacting to every new trend and start executing a deliberate plan. You measure what matters. You double down on what works. And you always, always ask: <strong>"Does this fit our brand?"</strong> If the answer is yes, you proceed with confidence. If it's no, you save your resources for something better.</p>
 
         <h3 class="black-head">The Ripple Effect of Good Strategy</h3>
         <p>A solid strategy doesn't just help you say "yes" or "no" more easily. It creates alignment across your entire organization. Your team moves in the same direction. Your messaging stays consistent across every touchpoint. Your customers experience a cohesive brand identity that builds trust and recognition over time.</p>
@@ -409,6 +465,32 @@
       <p><strong>Remember:</strong> when you have a good strategy, you don't chase every opportunity. You choose only the ones that fit. And that clarity is the ultimate competitive advantage.</p>
       <p class="centered-line">Let's build your strategy first. Then watch everything else fall into place.</p>
     </div>
+
+    <!-- SECTION 2: About the Founder - matching Core Method format -->
+    <div class="hero-card">
+      <div class="about-title">About the Founder</div>
+      <div class="about-description">
+        <p>Jack Milla is the creative force behind Dizine by Jack. He brings a unique blend of academic discipline, journalistic instinct, and hands-on community experience to every project. Jack holds a B.A. in Political Science with a Minor in History from Cameron University. While at Cameron, he wrote for the Cameron Collegian newspaper, sharpening his ability to tell compelling stories that resonate. He has also worked closely with nonprofit organizations including a local food bank, learning firsthand how purpose-driven communication can amplify impact and build trust.</p>
+      </div>
+      <!-- THREE BLERBS IN A ROW - with subtle single-color icons -->
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">📬</div>
+          <h3>DIZ News</h3>
+          <p>Weekly newsletter for 99¢/month — branding, media, and culture insights you won't find anywhere else.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">👕</div>
+          <h3>T-Shirt Dizines</h3>
+          <p>Original apparel designs available now. Unique, creative, and built for the driven. Hats coming soon!</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎓</div>
+          <h3>Background</h3>
+          <p>Cameron University grad. Wrote for the Collegian. Volunteered at a food bank. Real-world storytelling & community impact.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="main-footer">
@@ -431,8 +513,8 @@
 
       <div class="footer-buttons-wrap">
         <div class="footer-buttons">
-          <a href="https://www.facebook.com/profile.php?id=100090058807047" target="_blank" rel="noopener noreferrer" class="btn-facebook">📘 Facebook</a>
-          <a href="https://instagram.com/jackmilla98" target="_blank" rel="noopener noreferrer" class="btn-instagram">📷 Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100090058807047" target="_blank" rel="noopener noreferrer" class="btn-facebook">Facebook</a>
+          <a href="https://instagram.com/jackmilla98" target="_blank" rel="noopener noreferrer" class="btn-instagram">Instagram</a>
         </div>
       </div>
     </div>
